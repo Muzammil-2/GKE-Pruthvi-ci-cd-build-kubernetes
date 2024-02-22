@@ -9,7 +9,7 @@ variable "region" {
 provider "google" {
   project = var.project_id
   region  = var.region
-  credentials = file("service-account.json")
+  credentials = file("pruthvi-terraform-sa.json")
 }
 variable "gke_username" {
   default     = ""
